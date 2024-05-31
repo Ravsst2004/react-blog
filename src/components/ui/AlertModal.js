@@ -1,11 +1,29 @@
-const AlertModal = () => {
+const AlertModal = (props) => {
+  const { title, subTitle, customClass = {} } = props;
+
+  // Default value for className
+  const defaultCustomClass = {
+    textColor: "text-black",
+    backgroundColor: "bg-white",
+    borderColor: "border-gray-400",
+  };
+
+  // Merge default value and custom value
+  const customClassValue = {
+    ...defaultCustomClass,
+    ...customClass,
+  };
+
+  // Define className
+  const customClassName = `${customClassValue.textColor} ${customClassValue.backgroundColor} ${customClassValue.borderColor}`;
+
   return (
     <div
-      className="fixed max-w-md px-4 py-3 mx-auto mt-4 text-red-700 transform -translate-x-1/2 -translate-y-1/2 bg-red-100 border border-red-400 rounded top-20 left-1/2"
+      className={`${customClassName} fixed max-w-md px-4 py-3 mx-auto mt-4 transform -translate-x-1/2 -translate-y-1/2 rounded top-20 left-1/2`}
       role="alert"
     >
-      <strong className="font-bold">Holy CJ!</strong>
-      <span className="block pl-2 sm:inline">You need to write something</span>
+      <strong className="font-bold">{title}</strong>
+      <span className="block pl-2 sm:inline">{subTitle}</span>
     </div>
   );
 };
