@@ -17,6 +17,24 @@
       "title": "Hello World 3",
       "author": "Jro",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": "677f",
+      "title": "Belajar Next Js",
+      "content": "Saya membuat Blog website blog sederhana ini dengan menggunakan Next Js dan menyimpan blognya di json sebagai Fake database dan menjadi fake API",
+      "author": "Datuk"
+    },
+    {
+      "id": "39af",
+      "title": "1",
+      "content": "2",
+      "author": "Datuk"
+    },
+    {
+      "id": "9382",
+      "title": "3213",
+      "content": "123131",
+      "author": "Datuk"
     }
   ]
 }

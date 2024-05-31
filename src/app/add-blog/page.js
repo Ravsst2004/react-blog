@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Router from "next/router";
+import { useRouter } from "next/navigation";
 
 // Component UI
 import AlertModal from "@/components/ui/AlertModal";
@@ -13,7 +13,7 @@ const AddBlog = () => {
   const [author, setAuthor] = useState("Datuk");
   const [error, setError] = useState(false);
 
-  const router = Router;
+  const router = useRouter();
 
   const handleAddBlog = async (e) => {
     e.preventDefault();
@@ -38,7 +38,7 @@ const AddBlog = () => {
         }
       );
 
-      // redirect("/");
+      router.push("/");
     } catch (error) {
       console.log(error);
     }
