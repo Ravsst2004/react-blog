@@ -46,7 +46,9 @@ const AddBlog = () => {
 
   return (
     <div>
-      {error && <AlertModal />}
+      {error && (
+        <AlertModal title={"Error!"} subTitle={"Please fill in all fields."} />
+      )}
 
       <h1 className="mt-8 text-6xl font-bold">BLOG</h1>
 
