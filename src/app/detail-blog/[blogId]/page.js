@@ -47,8 +47,9 @@ const BlogDetail = () => {
   };
 
   /* Conditionally render the loading and error states */
-  if (loading) return <p className="mt-5">Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) return <p className="mt-5 font-bold text-3xl">Loading...</p>;
+  if (error)
+    return <p className="mt-5 font-bold text-3xl text-red-600">Not Found</p>;
   return (
     <>
       {/* Conditionally render the ConfirmModal and pass the handleConfirm and handleCancel functions */}
