@@ -11,7 +11,7 @@ const Home = () => {
   } = useFetch("http://localhost:8000/blogs");
 
   return (
-    <div className="container">
+    <div>
       {error ? (
         <h1 className="mt-8 text-6xl font-bold text-red-600">Error.....</h1>
       ) : (
