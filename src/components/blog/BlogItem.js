@@ -15,7 +15,9 @@ const BlogItem = ({ blogs }) => {
           <p className="">{blog.content}</p>
 
           <Link
-            href={`/detail-blog/${blog.id}`}
+            href={`/detail-blog/${blog.title
+              .replace(/\s+/g, "")
+              .toLowerCase()}`}
             className="max-w-[10rem] text-center p-2 bg-blue-300 border border-black rounded-lg"
           >
             Read More
