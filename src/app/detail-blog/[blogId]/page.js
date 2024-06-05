@@ -60,28 +60,22 @@ const BlogDetail = () => {
         />
       )}
 
-      <div className="container px-5 py-10 mx-auto mt-5 border border-black">
-        <div className="mb-6">
-          <h1 className="mb-4 text-3xl font-bold">Blog Detail</h1>
-          <h1 className="text-xl text-gray-700">{blog && blog.title}</h1>
-        </div>
-        <div className="mb-6">
-          <h2 className="mb-2 text-2xl font-semibold">Content</h2>
-          <p className="text-gray-600">{blog && blog.content}</p>
-        </div>
-        <div>
-          <h3 className="text-xl font-medium text-gray-500">
-            Author: {blog && blog.author}
+      <div className="mx-4 md:mx-32">
+        <div className="container px-5 py-10 mx-auto mt-5 border border-black rounded-xl">
+          <h1 className="text-3xl font-bold">{blog && blog.title}</h1>
+          <h3 className="mb-4 text-xl font-medium text-gray-500">
+            <i>By {blog && blog.author}</i>
           </h3>
-        </div>
+          <p className="text-gray-600">{blog && blog.content}</p>
 
-        {/* Button to trigger the delete confirmation */}
-        <button
-          onClick={handleModalDelete}
-          className="p-2 mt-5 text-white bg-red-500 border border-red-500 rounded-lg hover:bg-red-600"
-        >
-          Delete
-        </button>
+          {/* Button to trigger the delete confirmation */}
+          <button
+            onClick={handleModalDelete}
+            className="p-2 mt-5 text-white bg-red-500 border border-red-500 rounded-lg hover:bg-red-600"
+          >
+            Delete
+          </button>
+        </div>
       </div>
     </>
   );

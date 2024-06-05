@@ -1,6 +1,6 @@
 const ConfirmModal = ({ onConfirm, onCancel }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur confirm-dialog ">
+    <div className="mb-72 fixed inset-0 z-50 flex items-center justify-center backdrop-blur confirm-dialog ">
       <div className="relative min-h-screen px-4 md:flex md:items-center md:justify-center">
         <div className="absolute inset-0 z-10 w-full h-full opacity-25 "></div>
         <div className="fixed inset-x-0 bottom-0 z-50 p-4 mx-4 mb-4 bg-white rounded-lg shadow-lg md:max-w-md md:mx-auto md:relative">

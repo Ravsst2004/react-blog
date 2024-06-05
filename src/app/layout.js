@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.className}`}>
         <Navbar />
-        <div className="container mx-auto">{children}</div>
+        <div className="mx-4 md:container md:mx-auto">{children}</div>
       </body>
     </html>
   );
