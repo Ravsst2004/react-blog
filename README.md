@@ -1,6 +1,6 @@
 # react-blog
 
-Simple react blog using Next js and Use Some Library like Axios and Json Server.
+Simple react blog using Next js and Use Some Library like Axios and Json Server for the fake API
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
